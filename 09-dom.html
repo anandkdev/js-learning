@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <!-- <button>Hello</button>
+  <button class="js-button2">Second Button</button> -->
+
+  <p>YouTube Subscribe Button</p>
+  <button onclick="sub()" class="js-sub-btn">Subscribe</button>
+  <p>Amazon Shipping Calculation</p>
+  <input type="text" class="js-input" placeholder="count the order">
+  <button onclick="cal()">calculate</button>
+  <p class="js-result"></p>
+
+  <script>
+    // console.log(document.title);
+    // document.title = 'changed'; //this is an build in Object
+    // console.log(document.body.innerHTML);
+    // document.body.innerHTML = '<button>Good Job!</button>'; //Its remove everything and added Good Job!
+
+    // console.log(document.querySelector('button'));
+    // console.log(document.querySelector('button').innerHTML);
+    // console.log(document.querySelector('button').innerHTML = 'Welcome');
+
+    // console.log(document.querySelector('.js-button2').innerHTML);
+    // const buttonElement = document.querySelector('.js-button2').innerHTML = 'Welcome back';
+
+    // console.log(buttonElement);
+
+    function sub(){
+      const buttonElem = document.querySelector('.js-sub-btn')
+      if(buttonElem.innerText === 'Subscribe'){
+        buttonElem.innerHTML = 'Subscribed'; //innerHTML include space also that y we are using innerText it take only the text no the space.
+      }else{
+        buttonElem.innerText = '    Subscribe'//has empty space.
+      }
+    }
+
+    function cal(){
+      const a = document.querySelector('.js-input');
+      let result = Number(a.value);
+      console.log(result);
+      if(result < 40){
+        result += 10;
+      }
+      document.querySelector('.js-result')
+      .innerHTML = `$${result}`;
+    }
+
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11-practice</title>
+</head>
+<body>
+  
+  <script>
+  // // 11a 
+  //  let num = [10,20,30];
+  //  num[num.length - 1]  = 90;
+
+  //  console.log(num.at(-1))
+
+  // // 11b
+  //  function getLastValue(array){
+  //   lastIndex = array[array.length - 1];
+  //   console.log(lastIndex);
+  //  }
+
+  //  getLastValue([1,20,22,24,5]);
+  //  getLastValue(['hi','hello','good']);
+
+  // //  11c
+  //  function swapFirstLast(arr){
+  //   if(arr.length < 2){
+  //     return arr;
+  //   }
+  //   let value = arr[0];
+  //   arr[0] = arr[arr.length - 1];
+  //   arr[arr.length - 1] = value;
+  //   console.log(arr);
+  //  }
+
+  //  swapFirstLast([1,20,22,24,5]);
+  //  swapFirstLast(['hi','hello','good']);
+  
+  // // 11d
+  // for(let i=0; i<=10; i=i+2){
+  //   console.log(i);
+  // }
+
+  // //11e
+  // for(let i=5; i>=0; i--){
+  //   console.log(i);
+  // }
+
+  // //11f
+  // let i = 0;
+  // while(i<=10){
+  //   console.log(i);
+  //   i=i+2; 
+  // }
+  // let j=5;
+  // while(j>=0){
+  //   console.log(j);
+  //   j--; 
+  // }
+
+    // 11g
+    // const arr1 = [1,2,3];
+    // let arr2 =[]; 
+    // for(i=0; i<3;i++){
+    //   arr = arr1[i]+ 1;
+    //   arr2.push(arr);
+    // }
+    // console.log(arr2);
+
+    function addOne(arr){
+      for(let i=0; i < arr.length; i++){
+      arr[i] = arr[i]+ 1;
+      }
+      return arr;
+    }
+    let arr1 = arr;
+    
+    console.log(addOne([1,2,3]));
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+</head>
+<body>
+  <!-- <button onclick="calculator+='1'; console.log(calculator)">1</button>
+
+  <button onclick="calculator+='2'; console.log(calculator)">2</button>
+
+  <button onclick="calculator+='3'; console.log(calculator)">3</button>
+
+  <button onclick="calculator+=' + '; console.log(calculator)">+</button>
+
+  <button onclick="a = eval(a);
+  console.log(a);
+  
+  localStorage.setItem('a',a);">
+  =</button>
+  
+  <button onclick="calculator = ' ';
+  console.log(calculator);">
+  c</button> -->
+
+  <button onclick="updateValue('1')">1</button>
+  <button onclick="updateValue('2')">2</button>
+  <button onclick="updateValue('3')">3</button>
+  <button onclick="updateValue('4')">4</button>
+  <button onclick="updateValue('5')">5</button>
+  <button onclick="updateValue('6')">6</button>
+  <button onclick="updateValue('7')">7</button>
+  <button onclick="updateValue('8')">8</button>
+  <button onclick="updateValue('9')">9</button>
+  <button onclick="updateValue('0')">0</button>
+  <button onclick="updateValue('+')">+</button>
+  <button onclick="updateValue('-')">-</button>
+  <button onclick="updateValue('*')">*</button>
+  <button onclick="updateValue('/')">/</button>
+  <button onclick="cal = eval(cal);
+  console.log(cal)
+  localStorage.setItem('cal',cal)">=</button>
+  <button onclick="cal = '';
+  localStorage.setItem('cal',cal);">Clear</button>
+  
+
+
+
+
+
+  <script>
+    // let calculator = " ";
+
+    // localStorage.setItem('calculator', calculator);
+
+    // let a = localStorage.getItem('calculator') || "";
+
+    let cal = localStorage.getItem('cal') || "";
+
+    function updateValue(value){
+      cal += value;
+      console.log(cal);
+      localStorage.setItem('cal',cal);
+    }
+
+    // function saveValue(){
+    //   localStorage.setItem('cal',cal);
+    // }
+    // console.log(saveValue());
+
+
+  </script>
+
+</body>
+</html>

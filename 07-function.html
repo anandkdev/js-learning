@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function</title>
+</head>
+<body>
+  <script>
+    function cal(a){
+      console.log(a * 3);
+    }
+
+    function cal1(a,b){
+      console.log(a * b);
+    }
+
+    function cal2(a,b = 0.1){  /*b=0.1 is set a default value */
+      console.log(a * b);
+    }
+
+    cal(1001);
+    cal2(1001);
+    cal1(1001,0.1);
+
+  </script>
+</body>
+</html>

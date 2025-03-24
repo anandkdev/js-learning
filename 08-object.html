@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<body>
+  <script>
+
+    // Object Shortcut
+    const object3 = {
+      wish : 'Good Job',
+      name : 'Anandakumar',
+      age : 26
+    };
+    // const wish = object3.message;
+    /*shortcut*/ const {wish,name,age} = object3; /* Destructuring */
+    console.log(wish,name,age);
+
+    // Shorthand property and method
+    const object5 = {
+      // wish : wish, //Added variable wish
+      wish,
+      // method : function message() {
+      //   console.log('something');
+      // }
+      method(){
+        console.log('something');
+      }
+    }
+    console.log(object5.wish);
+    console.log(object5.method());
+
+    // console.log('Hello'.length);/*Auto boxing*/
+    // console.log('Hello'.toUpperCase());
+
+    // const object1 = {
+    //   message : 'Hello'
+    // }
+    // console.log(object1.message);
+    // const object2 = object1; /*Object reference*/
+
+    // object1.message = 'Good Job';
+    // console.log(object1.message);
+
+    // const object3 = {
+    //   message : 'Good Job'
+    // }
+
+    // console.log(object3 === object1);/*Compare  reference not the values*/
+    // console.log(object2 === object1);
+
+
+
+
+    const object ={
+      name : 'anand',
+      rating : {
+        stars : 4.5,
+        count : 54
+      },
+      fun : function add(){
+        console.log('function add value');
+      },
+      fun1 : () => {
+        console.log('arrow function');
+      }
+    };
+
+    console.log(object.fun1());
+
+    // JSON 
+    let json = JSON.stringify(object);
+    console.log(json);
+
+    let js = JSON.parse(json);
+    console.log(js);
+    console.log(object);
+
+
+    // const product = {
+    //   name : "Socks",
+    //   price : 1090
+    // };
+    // console.log(product);
+    // console.log(product.name);
+    // product.name = "cotton socks";
+    // console.log(product.name);
+
+    // product.newProperty = true;
+    // console.log(product);
+
+    // delete product.newProperty
+    // console.log(product);
+
+    // const product = {
+    //   basketBall : 2095,
+    // }
+    // console.log(product.basketBall);
+    // product.basketBall += 500;
+    // console.log(product.basketBall);
+    // product['delivery-time'] = '3 Days'; 
+    // console.log(product);
+
+    // const product1 = {
+    //   name : '30lbs Racket',
+    //   price : 1599
+    // }
+    // const product2 = {
+    //   name : '30lbs Racket',
+    //   price : 1699
+    // }
+    
+
+    // function comparePrice(product1,product2){
+    //   // if (!product1 || !product2 || typeof product1.price !== 'number' || typeof product2.price !== 'number') {
+    //   //   console.log("Invalid input: products must have a numeric price.");
+    //   //   return; // Exit the function if input is invalid
+    //   // }
+    //   // if(product1.price < product2.price){
+    //   //   return console.log(`${product1.price} is affordable`);
+    //   // } return console.log(`${product2.price} is affordable`);
+
+    // //   if(product1.name === product2.name && product1.price === product2.price){
+    // //     return true;
+    // // } return false;
+
+    //   return(product1.name === product2.name && product1.price === product2.price);
+    
+    // }
+    // console.log(comparePrice(product1,product2));
+
+    const wishing = 'Good Morning';
+    const wishing1 = wishing.toLowerCase();
+    function wish1(a){
+      const wishing2 = a.toLowerCase().repeat(5);
+      
+      return wishing2;
+    }
+    console.log(wish1(wishing));
+
+    
+
+
+  </script>
+</body>
+</html>

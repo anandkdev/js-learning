@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .sub-btn{
+      border: none;
+      background-color: black;
+      color: white;
+      padding: 10px 12px;
+      border-radius: 50px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 50px;
+    }
+    .is-sub{
+      color: black;
+      background-color: rgb(243, 237, 237);
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .input-style{
+      height: 24px;
+      width: 160px;
+      border-color: gray;
+      border-width: 1px;
+      border-radius: 2px;
+      padding: 4px 4px;
+    }
+
+    .result-style{
+      height: 34px;
+      border-color: gray;
+      border-width: 1px;
+      padding: 4px 8px;
+      background-color: green;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- <button>Hello</button>
+  <button class="js-button2">Second Button</button> -->
+
+  <p>YouTube Subscribe Button</p>
+  <button onclick="sub()" class="js-sub-btn sub-btn">Subscribe</button>
+  <p>Amazon Shipping Calculation</p>
+  <input type="text" class="js-input input-style" placeholder="count the order">
+  <button class="result-style" onclick="cal()">Calculate</button>
+  <p class="js-result"></p>
+
+  <script>
+    // console.log(document.title);
+    // document.title = 'changed'; //this is an build in Object
+    // console.log(document.body.innerHTML);
+    // document.body.innerHTML = '<button>Good Job!</button>'; //Its remove everything and added Good Job!
+
+    // console.log(document.querySelector('button'));
+    // console.log(document.querySelector('button').innerHTML);
+    // console.log(document.querySelector('button').innerHTML = 'Welcome');
+
+    // console.log(document.querySelector('.js-button2').innerHTML);
+    // const buttonElement = document.querySelector('.js-button2').innerHTML = 'Welcome back';
+
+    // console.log(buttonElement);
+
+    function sub(){
+      const buttonElem = document.querySelector('.js-sub-btn')
+      if(buttonElem.innerText === 'Subscribe'){
+        buttonElem.innerHTML = 'Subscribed';
+        buttonElem.classList.add('is-sub'); //innerHTML include space also that y we are using innerText it take only the text no the space.
+      }else{
+        buttonElem.innerText = '    Subscribe';
+        buttonElem.classList.remove('is-sub');//has empty space.
+        
+      }
+    }
+
+    function cal(){
+      const a = document.querySelector('.js-input');
+      let result = Number(a.value);
+      console.log(result);
+      if(result < 40){
+        result += 10;
+      }
+      document.querySelector('.js-result')
+      .innerHTML = `$${result}`;
+    }
+
+    
+  </script>
+</body>
+</html>

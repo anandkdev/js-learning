@@ -1,0 +1,113 @@
+// {
+  
+//   // "editor.tokenColorCustomizations": {
+//   //   "comments": "#6b7280", // Gray
+//   //   "keywords": "#ff7b72", // Red
+//   //   "functions": "#dcdcaa", // Yellow
+//   //   "strings": "#a5d6ff", // Blue
+//   //   "variables": "#9cdcfe", // Light Blue
+//   //   "numbers": "#d19a66" // Orange
+//   // }
+
+  
+//   "editor.tokenColorCustomizations": {
+//     "comments": "#6b7280", // Gray
+//     "keywords": "#ff7b72", // Red
+//     "functions": "#dcdcaa", // Yellow
+//     "strings": "#a5d6ff", // Blue
+//     "variables": "#ffffff", // Light Blue
+//     "numbers": "#d19a66", // Orange
+//     // "operators": "#c586c0", // Purple
+//     // "punctuation": "#cccccc", // Light Gray
+//     // "types": "#4ec9b0", // Cyan
+//     // "classes": "#4ec9b0", // Cyan
+//     // "interfaces": "#4ec9b0", // Cyan
+//     // "enums": "#4ec9b0", // Cyan
+//     // "properties": "#9cdcfe", // Light Blue
+//     // "parameters": "#9cdcfe", // Light Blue
+//     // "constants": "#d19a66", // Orange
+//     // "namespaces": "#ce9178", // Light Brown
+//     // "tags": "#569cd6", // Dark Blue
+//     // "attributes": "#9cdcfe", // Light Blue
+//     // "regex": "#b5cea8", // Light Green
+//     // "templateStrings": "#ce9178", // Light Brown
+//     // "templateTags": "#569cd6", // Dark Blue
+//     // "json.property": "#9cdcfe", // Light Blue
+//     // "json.string": "#ce9178", // Light Brown
+//     // "json.number": "#d19a66", // Orange
+//     // "json.boolean": "#569cd6", // Dark Blue
+//     // "json.null": "#569cd6" // Dark Blue
+//     "textMateRules": [
+//       {
+//         "scope": "keyword.operator",
+//         "settings": { "foreground": "#c586c0" } // Purple (Operators)
+//       },
+//       {
+//         "scope": "punctuation",
+//         "settings": { "foreground": "#cccccc" } // Light Gray (Punctuation)
+//       },
+//       {
+//         "scope": "storage.type",
+//         "settings": { "foreground": "#4ec9b0" } // Cyan (Types, Classes, Interfaces, Enums)
+//       },
+//       {
+//         "scope": "variable.property",
+//         "settings": { "foreground": "#c0003d" } // Light Blue (Properties)
+//       },
+//       {
+//         "scope": "variable.parameter",
+//         "settings": { "foreground": "#9cdcfe" } // Light Blue (Parameters)
+//       },
+//       {
+//         "scope": "constant",
+//         "settings": { "foreground": "#d19a66" } // Orange (Constants)
+//       },
+//       {
+//         "scope": "entity.name.namespace",
+//         "settings": { "foreground": "#ce9178" } // Light Brown (Namespaces)
+//       },
+//       {
+//         "scope": "entity.name.tag",
+//         "settings": { "foreground": "#569cd6" } // Dark Blue (Tags)
+//       },
+//       {
+//         "scope": "entity.other.attribute-name",
+//         "settings": { "foreground": "#9cdcfe" } // Light Blue (Attributes)
+//       },
+//       {
+//         "scope": "string.regexp",
+//         "settings": { "foreground": "#b5cea8" } // Light Green (Regex)
+//       },
+//       {
+//         "scope": "string.template",
+//         "settings": { "foreground": "#ce9178" } // Light Brown (Template Strings)
+//       },
+//       {
+//         "scope": "punctuation.definition.template-expression",
+//         "settings": { "foreground": "#569cd6" } // Dark Blue (Template Tags)
+//       },
+//       {
+//         "scope": "support.type.property-name.json",
+//         "settings": { "foreground": "#9cdcfe" } // Light Blue (JSON Property)
+//       },
+//       {
+//         "scope": "string.quoted.double.json",
+//         "settings": { "foreground": "#ce9178" } // Light Brown (JSON String)
+//       },
+//       {
+//         "scope": "constant.numeric.json",
+//         "settings": { "foreground": "#d19a66" } // Orange (JSON Number)
+//       },
+//       {
+//         "scope": "constant.language.boolean.json",
+//         "settings": { "foreground": "#569cd6" } // Dark Blue (JSON Boolean)
+//       },
+//       {
+//         "scope": "constant.language.null.json",
+//         "settings": { "foreground": "#569cd6" } // Dark Blue (JSON Null)
+//       }
+//     ]
+//   }
+
+
+// }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice</title>
+  <style>
+    .cart{
+      background-color: yellow;
+    }
+    .buyNow{
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <button>click</button>
+  <button>Anand</button>
+  <button>French Fries</button>
+  <p>Hello, world!</p>
+  <p>
+    Worked on the pvt application testing today and raised some bugs.
+    <button title="Move to cart" class="cart" onclick="alert('Product added to cart')">Add to Cart</button>
+    <button class="buyNow" onclick="console.log('Loading...'), alert('Purchased')">Buy now</button>
+  </p>
+
+
+  <script>
+    const name = 'Ananda';
+    console.log(`My name is:${name}`)
+
+    let cost = 1+(2*3)+9;
+    console.log(`Cost of Food:$${cost}`);
+
+    let total = cost * (1/10);
+    console.log(`10% ($${total}) tax has been debited`)
+
+    total += cost;
+    console.log(`Total cost: $${total}`)
+
+    const message = 'Hello';
+    console.log(typeof message)
+    console.log('Welcome');
+  </script>
+</body>
+</html>
