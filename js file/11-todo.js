@@ -15,11 +15,22 @@
       addtodo = '';
       for(let i=0; i < todoList.length; i++){
       const value = todoList[i];
-      const html = `<p>${value}</p>`;
+      const html = `<p>${value}
+      <button onclick = "deleteIndex(${i})">Delete 1</button>
+      <button onclick = "todoList.splice(${i}, 1); renderToDoList()">Delete 2</button></p>`;
       addtodo += html;
+      
     }
       document.querySelector('.display').innerHTML = addtodo;
+      console.log(addtodo);
     }
+    function deleteIndex(i){
+      todoList.splice([i],1);
+      console.log(todoList);
+      renderToDoList();
+    }
+
+    
  
     function addToDo(){
       let inputA = document.querySelector('.js-input');
