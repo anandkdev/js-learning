@@ -60,6 +60,28 @@
       numDouble.push(value*2);
     }
     console.log(numDouble);
+
+
+    const num = [];
+    for(let i=1;i <= 10; i++){
+      console.log(num.push(i));
+      console.log(typeof(num));
+    }
+
+    function doubleValue(numValue){
+
+      let output =[];
+      for(let i=0;i < numValue.length; i++){
+        const v1 = numValue[i] *2;
+        output.push(v1);
+      }
+      // console.log(output);
+      return output;
+    }
+
+    // doubleValue([1,2,2,3]);
+    console.log(doubleValue([1,2,2,3]));
+
     
   </script>
 </body>
