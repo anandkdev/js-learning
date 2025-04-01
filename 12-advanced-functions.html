@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced function</title>
+</head>
+<body>
+  
+  <script>
+    function greeting(){
+      console.log('hello')
+    }
+    greeting();
+
+    let function1 = function(){
+      console.log('hello1');
+    }
+    function1(); /* or console.log(function1()); */
+
+    const object1 = {
+      num : 1,
+      fun : function(){
+        console.log('hello2');
+      }
+    }
+    object1.fun();
+
+    function run(param){
+      param();
+    }
+    run(function1);
+    run(function(){
+      console.log('hello4')
+    })
+
+    // setTimeout
+    setTimeout(function(){
+      console.log('timeout');
+    }, 3000);
+    // setInterval
+    /* setInterval(function(){
+      console.log('interval');
+    }, 2000); */
+
+
+    [ 'something', 'something1', 'something2'].forEach(function(value, index){
+      console.log(value);
+      console.log(index);
+    })
+  </script>
+</body>
+</html>
