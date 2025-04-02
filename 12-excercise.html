@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12-Excercise</title>
+</head>
+<body>
+
+  <button onclick="changeText()" class="change-text">Add to cart</button>
+  <p class="update"></p>
+  <script>
+    // let add = function(){
+    //   console.log(2+3);
+    // }
+    // add();
+
+
+    // function runTwice(fun){
+    //   fun();
+    // }
+    // runTwice(add);
+    // runTwice(function(){
+    //   console.log('12b');
+    // })
+    // function changeText(){
+    //   const elementBtn = document.querySelector('.change-text');
+    //   elementBtn.innerText = 'Loading...';
+    //   setTimeout(function(){
+    //     elementBtn.innerText = 'Finished!';
+    //   },2000) 
+    // }
+
+    let isClicked = false;
+    let stored;
+    function changeText(){
+      const elementBtn = document.querySelector('.update');
+      elementBtn.innerHTML = 'Added';
+      
+      clearTimeout(stored);
+      stored = setTimeout(function(){
+      elementBtn.innerHTML = '';
+      },2000) 
+    }
+    
+    
+  </script>
+</body>
+</html>
