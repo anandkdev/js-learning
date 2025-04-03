@@ -9,6 +9,15 @@
 
   <button onclick="changeText()" class="change-text">Add to cart</button>
   <p class="update"></p>
+
+  <button onclick="message++;
+  isSomething()">Add</button>
+  <button onclick="if(message > 0){
+    message--;
+    if(message === 0){
+      stopNotification();
+    }}
+    ">Remove</button>
   <script>
     // let add = function(){
     //   console.log(2+3);
@@ -31,19 +40,54 @@
     //   },2000) 
     // }
 
-    let isClicked = false;
-    let stored;
-    function changeText(){
-      const elementBtn = document.querySelector('.update');
-      elementBtn.innerHTML = 'Added';
+    // let isClicked = false;
+    // let stored;
+    // function changeText(){
+    //   const elementBtn = document.querySelector('.update');
+    //   elementBtn.innerHTML = 'Added';
       
-      clearTimeout(stored);
-      stored = setTimeout(function(){
-      elementBtn.innerHTML = '';
-      },2000) 
+    //   clearTimeout(stored);
+    //   stored = setTimeout(function(){
+    //   elementBtn.innerHTML = '';
+    //   },2000) 
+    // }
+
+    // setInterval(function(){
+    //   if(document.title === '12-Excercise'){
+    //     document.title = '(2) New Messages';
+    //   }else{
+    //     document.title = '12-Excercise';
+    //   }
+      
+    // },1000)
+    let message = 1;
+    let isValueId;
+    let isSomething;
+
+    isStart()
+
+    function isStart(){
+      if(isSomething){
+        return;
+      }
+
+      isSomething = true;
+
+      isValueId = setInterval(function(){
+      if(document.title === '12-Excercise'){
+        document.title = `(${message}) New message`;
+      }else{
+        document.title = '12-Excercise';
+      }
+    },1000)
     }
     
-    
+
+    function stopNotification(){
+      isSomething = false;
+      clearInterval(isValueId);
+      document.title = '12-Excercise';
+    } 
   </script>
 </body>
 </html>

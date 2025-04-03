@@ -8,9 +8,9 @@
   </head>
   <body>
     <p class="title">Rock Paper Scissor Game</p>
-    <button onclick="console.log(start('Rock'))" class="img"><img class="img1" src="game copy/spr game/Rock-emoji.png" alt=""></button>
-    <button onclick="start('Paper')" class="img"><img class="img1" src="game copy/spr game/Paper-emoji.png" alt=""></button>
-    <button onclick="start('Scissor')" class="img"><img class="img1" src="game copy/spr game/Scissor-emoji.png" alt=""></button>
+    <button class="img js-rock-button"><img class="img1" src="game copy/spr game/Rock-emoji.png" alt=""></button>
+    <button class="img js-paper-button"><img class="img1" src="game copy/spr game/Paper-emoji.png" alt=""></button>
+    <button class="img js-scissor-button"><img class="img1" src="game copy/spr game/Scissor-emoji.png" alt=""></button>
     <p class="js-add-result"></p>
     <p class="js-update-move"></p>
     <p class="js-add-score"></p>
@@ -19,8 +19,8 @@
     score.loss = 0;
     score.tie = 0,
     localStorage.removeItem('score')
-    subCount()" class="reset">Reset Score</button>
-    <button onclick="autoPlay()" class="auto-play-btn">Auto Play</button>
+    subCount()" class="reset js-reset-btn">Reset Score</button>
+    <button class="auto-play-btn js-autoplay-btn">Auto Play</button>
 
 
     

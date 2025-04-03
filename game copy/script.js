@@ -6,6 +6,14 @@ subCount();
 let isAutoPlaying = false;
 let intervalId;
 
+document.body.addEventListener('keydown', (event)=>{
+  if(event.key === 'r')start('Rock');
+  if(event.key === 'p')start('Paper');
+  if(event.key === 's')start('Scissor');
+})
+
+document.querySelector('.js-autoplay-btn').addEventListener('click', ()=>{autoPlay()});
+
 function autoPlay(){
   if(!isAutoPlaying){
     intervalId = setInterval(function(){
@@ -26,6 +34,15 @@ function autoPlay(){
     isAutoPlaying = false;
   } 
 }
+
+document.querySelector('.js-rock-button')
+  .addEventListener('click', ()=>{start('Rock')});
+  
+document.querySelector('.js-paper-button')
+  .addEventListener('click', ()=>{start('Paper')});
+
+document.querySelector('.js-scissor-button')
+  .addEventListener('click', ()=>{start('Scissor')});
 
 function start(playerMove){
   let computerValue = " ";

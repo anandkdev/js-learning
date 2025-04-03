@@ -17,13 +17,20 @@
       todoList.forEach(function(value,index){
         const {name, dueDate} = value;
       const html = `<p>${name} ${dueDate}
-      <button onclick = "deleteIndex(${index})">Delete 1</button>
-      <button onclick = "todoList.splice(${index}, 1); renderToDoList()">Delete 2</button></p>`;
+      <button onclick = "deleteIndex(${index})" class ="deleteNote">Delete 1</button>
+      <button onclick = "">Delete 2</button></p>`;
       console.log(html);
       addtodo += html;
       })
       document.querySelector('.display').innerHTML = addtodo;
       console.log(addtodo);
+
+      document.querySelectorAll('.deleteNote')
+      .forEach((deleteBtn, index) => {
+        deleteBtn.addEventListener('click',()=>{
+          todoList.splice(index, 1); renderToDoList();
+        })
+      })
     }
       
     function deleteIndex(i){
